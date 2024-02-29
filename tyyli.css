@@ -35,6 +35,15 @@ nav ul li:first-child {
     margin-right: auto; /* Pushes the first link to the left */
 }
 
+.nav1 {
+    display: flex;
+    justify-content: flex-end; /* Siirtää linkit oikeaan reunaan */
+  }
+  
+  .nav1 a {
+    margin-left: 10px; /* Lisää välistystä linkkien välille */
+  }
+
 /* Muutettu h1 sijoittelu */
 h1 {
     margin-top: 50px; /* Lisätty marginaali ylhäältä */
