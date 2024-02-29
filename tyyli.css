@@ -1,8 +1,38 @@
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(44, 85, 168)
-    color #fff
-    padding: 10px 0;
-}
+
+<style>
+  /* Yhteiset tyyliasetukset */
+  nav {
+    position: fixed;
+    top: 0;
+  }
+
+  /* Ensimmäinen linkki */
+  #link1 {
+    left: 0;
+  }
+
+  /* Oikean yläkulman linkit */
+  .right-links {
+    right: 0;
+  }
+
+  /* CSS-mediakyselyt */
+  @media only screen and (max-width: 600px) {
+    nav {
+      text-align: center;
+    }
+
+    #link1 {
+      position: relative;
+      left: auto;
+      display: block;
+    }
+
+    .right-links {
+      position: relative;
+      right: auto;
+      display: block;
+      margin-top: 20px; /* Lisätään hieman tilaa linkkien välille pienemmillä näytöillä */
+    }
+  }
 
