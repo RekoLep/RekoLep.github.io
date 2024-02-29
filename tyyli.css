@@ -3,19 +3,19 @@ body {
 
 
 #meista {
-    position: fixed;
+    position: flex;
     top: 10px;
     right: 10px;
 
 }
 #otayhteytta {
-    position: fixed;
+    position: flex;
     top: 10px;
     right: 300px;
 
 }
 #tilaasiivous {
-    position: fixed;
+    position: flex;
     top: 10px;
     right: 700px;
 
