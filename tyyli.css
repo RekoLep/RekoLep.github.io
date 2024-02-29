@@ -1,23 +1,8 @@
-body {
-    background-color: bisque;
-
-
-#meista {
-    float: right;
-    top: 10px;
-    right: 10px;
-
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(44, 85, 168)
+    color #fff
+    padding: 10px 0;
 }
-#otayhteytta {
-    float: right;
-    top: 10px;
-    right: 300px;
 
-}
-#tilaasiivous {
-    float: right;
-    top: 10px;
-    right: 700px;
-
-}
-}
