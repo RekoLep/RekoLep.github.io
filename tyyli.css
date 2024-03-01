@@ -49,3 +49,21 @@ h1 {
     margin-top: 50px; /* Lisätty marginaali ylhäältä */
     font-family: Arial;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Tasaa linkit palkin leveyden mukaan */
+    background-color: #EBF4FF; /* Taustaväri */
+    color: #fff; /* Tekstin väri */
+    padding: 10px 0; /* Sisävälistys */
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Poista linkkien alleviivaus */
+    color: inherit; /* Peri tekstiväri */
+    padding: 5px 10px; /* Sisävälistys */
+  }
+  
+  .navbar a:hover {
+    background-color: #EBF4FF; /* Vaihda taustaväri hiiren ollessa linkin päällä */
+  }
