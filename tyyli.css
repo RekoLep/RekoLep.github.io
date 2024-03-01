@@ -50,6 +50,17 @@ h1 {
     font-family: Arial;
 }
 
+.container {
+    max-width: 100%; /* Maksimileveys */
+    height: auto; /* Säilytä kuvasuhde */
+  }
+  
+  img {
+    width: 100%; /* Kuvan leveys 100% kontekstin mukaisesti */
+    height: auto; /* Säilytä kuvasuhde */
+  }
+
+
 .navbar {
     display: flex;
     justify-content: space-around; /* Tasaa linkit palkin leveyden mukaan */
