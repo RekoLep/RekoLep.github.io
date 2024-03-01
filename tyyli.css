@@ -7,7 +7,7 @@ body {
 }
 
 
-nav {
+.nav {
     display: flex;
     justify-content: space-around; /* Tasaa linkit palkin leveyden mukaan */
     background-color: rgb(203, 246, 200); /* Taustaväri */
@@ -15,13 +15,13 @@ nav {
     padding: 10px 0; /* Sisävälistys */
   }
   
-  nav a {
+  .nav a {
     text-decoration: none; /* Poista linkkien alleviivaus */
     color: inherit; /* Peri tekstiväri */
     padding: 5px 10px; /* Sisävälistys */
   }
   
-  nav a:hover {
+  .nav a:hover {
     background-color: #0d9706; /* Vaihda taustaväri hiiren ollessa linkin päällä */
   }
 
