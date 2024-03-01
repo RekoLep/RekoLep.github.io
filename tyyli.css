@@ -1,3 +1,55 @@
+body {
+    background-color: #EBF4FF;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #EBF4FF;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li:first-child {
+    margin-right: auto; /* Pushes the first link to the left */
+}
+
+.nav1 {
+    display: flex;
+    justify-content: flex-end; /* Siirtää linkit oikeaan reunaan */
+  }
+  
+  .nav1 a {
+    margin-left: 10px; /* Lisää välistystä linkkien välille */
+  }
+
+/* Muutettu h1 sijoittelu */
+h1 {
+    margin-top: 50px; /* Lisätty marginaali ylhäältä */
+    font-family: Arial;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around; /* Tasaa linkit palkin leveyden mukaan */
