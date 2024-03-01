@@ -47,4 +47,5 @@ nav ul li:first-child {
 /* Muutettu h1 sijoittelu */
 h1 {
     margin-top: 50px; /* Lisätty marginaali ylhäältä */
+    font-family: Arial;
 }
