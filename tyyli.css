@@ -12,7 +12,7 @@ nav {
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
     background-color: #EBF4FF;
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li:first-child {
-    margin-right: auto; /* Pushes the first link to the left */
+    margin-right: auto;
 }
 
 .nav1 {
