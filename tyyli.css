@@ -8,41 +8,24 @@ body {
 
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    background-color: #EBF4FF;
-    font-size: 24;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li:first-child {
-    margin-right: auto;
-}
-
-.nav1 {
-    display: flex;
-    justify-content: flex-end; /* Siirtää linkit oikeaan reunaan */
+    justify-content: space-around; /* Tasaa linkit palkin leveyden mukaan */
+    background-color: rgb(203, 246, 200); /* Taustaväri */
+    color: #fff; /* Tekstin väri */
+    padding: 10px 0; /* Sisävälistys */
   }
   
-  .nav1 a {
-    margin-left: 10px; /* Lisää välistystä linkkien välille */
+  nav a {
+    text-decoration: none; /* Poista linkkien alleviivaus */
+    color: inherit; /* Peri tekstiväri */
+    padding: 5px 10px; /* Sisävälistys */
   }
+  
+  nav a:hover {
+    background-color: #0d9706; /* Vaihda taustaväri hiiren ollessa linkin päällä */
+  }
+
+
 
 /* Muutettu h1 sijoittelu */
 h1 {
