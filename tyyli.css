@@ -9,36 +9,35 @@ body {
 
 .nav {
     display: flex;
-    justify-content: space-around; /* Tasaa linkit palkin leveyden mukaan */
-    background-color: rgb(203, 246, 200); /* Taustaväri */
-    color: black; /* Tekstin väri */
-    padding: 10px 0; /* Sisävälistys */
+    justify-content: space-around; 
+    background-color: #EBF4FF; 
+    color: black; 
+    padding: 10px 0; 
   }
   
   .nav a {
-    text-decoration: none; /* Poista linkkien alleviivaus */
-    color: inherit; /* Peri tekstiväri */
-    padding: 5px 10px; /* Sisävälistys */
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5px 10px; 
   }
   
   .nav a:hover {
-    background-color: #EBF4FF; /* Vaihda taustaväri hiiren ollessa linkin päällä */
+    background-color: #EBF4FF; 
   }
 
 
 
-/* Muutettu h1 sijoittelu */
 h1 {
-    margin-top: 50px; /* Lisätty marginaali ylhäältä */
+    margin-top: 50px; 
     font-family: Arial;
 }
 
 .container {
-    max-width: 100%; /* Maksimileveys */
-    height: auto; /* Säilytä kuvasuhde */
+    max-width: 100%; 
+    height: auto; 
   }
   
   img {
-    width: 100%; /* Kuvan leveys 100% kontekstin mukaisesti */
-    height: auto; /* Säilytä kuvasuhde */
+    width: 100%; 
+    height: auto; 
   }
