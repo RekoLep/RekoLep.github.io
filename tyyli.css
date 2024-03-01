@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: space-around; /* Tasaa linkit palkin leveyden mukaan */
     background-color: rgb(203, 246, 200); /* Taustaväri */
-    color: #fff; /* Tekstin väri */
+    color: black; /* Tekstin väri */
     padding: 10px 0; /* Sisävälistys */
   }
   
