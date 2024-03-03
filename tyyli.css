@@ -13,6 +13,7 @@ body {
     background-color: #EBF4FF; 
     color: black; 
     padding: 10px 0; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .nav a {
