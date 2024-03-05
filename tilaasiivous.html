@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="tyyli.css">
 </head>
 <body>
-    <p>Tästä voi tilata siivouksen</p>
+    <h2>Valitse siivouspalvelu:</h2>
+
+<form action="/siivouspalvelu" method="post">
+  <input type="radio" id="tavallinen" name="siivous" value="tavallinen">
+  <label for="tavallinen">Tavallinen siivous</label><br>
+  <input type="radio" id="erikoissiivous" name="siivous" value="erikoissiivous">
+  <label for="erikoissiivous">Erikoissiivous</label><br><br>
+
+  <label for="nimi">Nimi:</label><br>
+  <input type="text" id="nimi" name="nimi"><br>
+
+  <label for="puhelinnumero">Puhelinnumero:</label><br>
+  <input type="text" id="puhelinnumero" name="puhelinnumero"><br>
+
+  <label for="sähköposti">Sähköpostiosoite:</label><br>
+  <input type="email" id="sähköposti" name="sähköposti"><br>
+
+  <label for="kotiosoite">Kotiosoite:</label><br>
+  <input type="text" id="kotiosoite" name="kotiosoite"><br><br>
+
+  <input type="submit" value="Lähetä">
+</form>
+
+</body>
+</html>
 </body>
 </html>
