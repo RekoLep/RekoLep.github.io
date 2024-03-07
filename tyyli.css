@@ -49,56 +49,5 @@ h1 {
     font-size: 16;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+  
 
-
-figure {
-    border: 10px #cccccc solid;
-    margin: auto;
-    margin-bottom: 0px;
-    max-width: 400px;
-}
-figcaption {
-    background-color: darkslategray;
-    color: white;
-    font-style: italic;
-    padding: 8px;
-    text-align: center;
-}
-.kuva {
-    max-width: 400px;
-    vertical-align: middle;
-    width: 100%;
-}
-
-/*pääsivun sisällön asettelu*/
-.grid-teksti1 { grid-area: g1; }
-.grid-teksti2 { grid-area: g2; }
-.grid-kuva { grid-area: g3; }
-
-.grid-container {
-    display: grid;
-    gap: 20px;
-    padding: 20px;
-}
-
-/*yritys-sivun sisällön asettelu*/
-.grid-henkilo1 { grid-area: g1-h1; }
-.grid-henkilo1-kuva { grid-area: g2-hk1; }
-.grid-henkilo2 { grid-area: g3-h2; }
-.grid-henkilo2-kuva { grid-area: g4-hk2; }
-
-.grid-yritys {
-    display: grid;
-    gap: 20px;
-    padding: 20px;
-}
-
-table {
-    text-align: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-}
-th{
-    padding-right: 100px;
-}
