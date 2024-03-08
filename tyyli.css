@@ -51,6 +51,7 @@ h1 {
     font-size: 16;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    margin: 40%;
 }
   
 .footer {
@@ -81,7 +82,7 @@ h2 {
 }
 
 .tilaasiivous {
-    text-align: center;
+    text-align: center; 
     font-size: xx-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
