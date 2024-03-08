@@ -86,3 +86,9 @@ h2 {
     font-size: xx-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
+.kuva {
+    max-width: 50%;
+    text-align: right;
+}
