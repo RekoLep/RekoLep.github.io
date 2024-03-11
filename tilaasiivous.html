@@ -1,37 +1,66 @@
-<!DOCTYPE html> <!-- Määrittää dokumentin tyypin HTML5:ksi -->
-<html lang="en"> <!-- Alkaa HTML-dokumentti, määrittää sivun kielen (englanti) -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Määrittää merkistökoodauksen UTF-8:ksi -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Määrittää sivun näkymän ja skaalauksen mobiililaitteille -->
-    <meta name="robots" content="nindex"> <!-- Estää hakukoneita indeksoimasta sivua -->
-    <meta name="googleboot" content="noindex"> <!-- Estää Googlen hakukoneen indeksoimasta sivua -->
-    <title>Ota meihin yhteyttä!!</title> <!-- Asettaa sivun otsikon -->
-    <link rel="stylesheet" href="tyyli.css"> <!-- Linkittää ulkoisen tyylitiedoston -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="nindex">
+    <meta name="googleboot" content="noindex">
+    <title>Tilaa parasta siivousta!!</title>
+    <link rel="stylesheet" href="tyyli.css">
 </head>
 <body>
-    <nav class="nav"> <!-- Luodaan navigaatiovalikko -->
-        <a href="index.html"> <!-- Linkki etusivulle -->
-            <img src="Firmanlogo.png" alt="Etusivu"> <!-- Firman logo, linkki etusivulle -->
+    <nav class="nav"> 
+        <a href="index.html">
+            <img src="Firmanlogo.png" alt="Etusivu">
         </a>
-        <a href="index.html" id="index">Etusivu</a> <!-- Linkki etusivulle -->
-        <a href="tilaasiivous.html" id="tilaasiivous">Tilaa siivous</a> <!-- Linkki siivouksen tilaamiseen -->
-        <a href="meista.html" id="meista">Meistä</a> <!-- Linkki 'Meistä' -sivulle -->
-        <a href="otayhteytta.html" id="otayhteytta">Ota yhteyttä</a> <!-- Linkki 'Ota yhteyttä' -sivulle -->
+        <a href="index.html" id="index">Etusivu</a>    
+        <a href="tilaasiivous.html" id="tilaasiivous">Tilaa siivous</a>
+        <a href="meista.html" id="meista">Meistä</a>
+        <a href="otayhteytta.html" id="otayhteytta">Ota yhteyttä</a>
     </nav>
 
-    <nav class="tilaasiivous"> <!-- Luodaan osio, jossa voi ottaa yhteyttä -->
-        <h4>Tällä sivulla voit lähettää vapaasti viestin, kysymyksen tai palautteen palveluihimme liittyen. Vastaamme sinulle mahdollisimman pian.</h4> <!-- Infoteksti lomakkeen yläpuolelle -->
-        <label for="viesti">Kirjoita viestisi tähän:</label><br> <!-- Tekstikentän label -->
-        <input type="text" id="viesti" name="viesti"><br> <!-- Tekstikenttä, johon voi kirjoittaa viestin -->
-        <input type="submit" value="Lähetä"> <!-- Lähetä-nappi -->
-        <h3>Täältä löydät myös yhteystietomme:</h3> <!-- Infoteksti yhteystietojen alapuolelle -->
-        <p>+0405869100</p> <!-- Puhelinnumero -->
-        <p>siivouspalvelu.merikarvia@gmail.com</p> <!-- Sähköpostiosoite -->
-    </nav>
 
-    <footer class="footer"> <!-- Sivun alatunniste -->
-        <p>Copyright &copy; 2024, Siivouspalvelu Merikarvia</p> <!-- Tekijänoikeustiedot -->
-    </footer> <!-- Alatunnisteen lopetus -->
+
+
+<div class="tilaasiivous">
+
+    <h2>Valitse siivouspalvelu:</h2>
+
+<form class="tilaasiivous" action="/siivouspalvelu" method="post">
+  <input type="radio" id="tavallinen" name="siivous" value="tavallinen">
+  <label for="tavallinen">Tavallinen siivous (sisältää koti- ja kiinteistösiivousken hinta 35€/tunti)</label><br>
+  <input type="radio" id="erikoissiivous" name="siivous" value="erikoissiivous">
+  <label for="erikoissiivous">Erikoissiivous (sisältää koti- ja kiinteistösiivousken lisäksi ulkotilojen ja pihan siivouksen 49€/tunti)</label><br><br>
+
+  <label for="nimi">Nimi:</label><br>
+  <input type="text" id="nimi" name="nimi"><br>
+
+  <label for="puhelinnumero">Puhelinnumero:</label><br>
+  <input type="text" id="puhelinnumero" name="puhelinnumero"><br>
+
+  <label for="sähköposti">Sähköpostiosoite:</label><br>
+  <input type="email" id="sähköposti" name="sähköposti"><br>
+
+  <label for="kotiosoite">Kotiosoite:</label><br>
+  <input type="text" id="kotiosoite" name="kotiosoite"><br><br>
+
+  <label for="milloin">Milloin ja missä siivous tehdään:</label><br>
+  <input type="text" id="milloin" name="milloin"><br><br>
+
+  <input type="submit" value="Lähetä">
+</form>
+</div>
+
+
+
+<footer class="footer">
+        
+    <p>Copyright &copy; 2024, Siivouspalvelu Merikarvia</p>
+
+</footer>
+
+
 
 </body>
-</html> <!-- HTML-dokumentin lopetus -->
+
+</html>
