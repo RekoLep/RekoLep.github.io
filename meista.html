@@ -1,53 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Määrittelee dokumentin tyypin HTML5:ksi -->
+<html lang="en"> <!-- Alkaa HTML-dokumentti, määrittää sivun kielen (englanti) -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="nindex">
-    <meta name="googleboot" content="noindex">
-    <title>Tietoa meistä!!!</title>
-    <link rel="stylesheet" href="tyyli.css">
+    <meta charset="UTF-8"> <!-- Määrittää merkistökoodauksen UTF-8:ksi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Määrittää sivun näkymän ja skaalauksen mobiililaitteille -->
+    <meta name="robots" content="nindex"> <!-- Estää hakukoneita indeksoimasta sivua -->
+    <meta name="googleboot" content="noindex"> <!-- Estää Googlen hakukoneen indeksoimasta sivua -->
+    <title>Tietoa meistä!!!</title> <!-- Asettaa sivun otsikon -->
+    <link rel="stylesheet" href="tyyli.css"> <!-- Linkittää ulkoisen tyylitiedoston -->
 </head>
 <body>
-    <nav class="nav"> 
-        <a href="index.html">
-            <img src="Firmanlogo.png" alt="Etusivu">
+    <nav class="nav"> <!-- Luodaan navigaatiovalikko -->
+        <a href="index.html"> <!-- Linkki etusivulle -->
+            <img src="Firmanlogo.png" alt="Etusivu"> <!-- Firman logo, linkki etusivulle -->
         </a>
-        <a href="index.html" id="index">Etusivu</a>    
-        <a href="tilaasiivous.html" id="tilaasiivous">Tilaa siivous</a>
-        <a href="meista.html" id="meista">Meistä</a>
-        <a href="otayhteytta.html" id="otayhteytta">Ota yhteyttä</a>
+        <a href="index.html" id="index">Etusivu</a> <!-- Linkki etusivulle -->
+        <a href="tilaasiivous.html" id="tilaasiivous">Tilaa siivous</a> <!-- Linkki siivouksen tilaamiseen -->
+        <a href="meista.html" id="meista">Meistä</a> <!-- Linkki 'Meistä' -sivulle -->
+        <a href="otayhteytta.html" id="otayhteytta">Ota yhteyttä</a> <!-- Linkki 'Ota yhteyttä' -sivulle -->
     </nav>
 
+    <H1>Tällä sivustolla löydät tietoa meistä:</H1> <!-- Sivun pääotsikko -->
 
+    <h2>Taru</h2> <!-- Alaotsikko -->
+    <div class="kuva"> <!-- Div-elementti, joka toimii kuvan säiliönä -->
+        <img src="työntekijä1.jpg" alt="kuva työntekijä Tarusta"> <!-- Kuva työntekijästä Taru -->
+    </div>
+    <div class="teksti1index"> <!-- Div-elementti, joka sisältää tekstisisällön -->
+        <p>Hei! Olen Taru, sitoutunut siivousalan ammattilainen Merikarvialla, ja nautin työstäni täysillä. Olen tunnettu tarkkuudestani ja huolellisuudestani jokaisessa työtehtävässäni, oli kyse sitten kotisiivouksesta tai toimistotilojen kunnossapidosta. Parasta työssäni on nähdä asiakkaiden tyytyväisyys puhtaaseen tilaan sekä työn vaihtelevuus, joka pitää minut motivoituneena päivästä toiseen. Siivousala on minulle enemmän kuin työ – se on intohimo, joka antaa minulle mahdollisuuden tuoda iloa ja hyvinvointia ympärilleni.</p> <!-- Tekstiparagrafi -->
+    </div>
 
+    <h2>Tero</h2> <!-- Alaotsikko -->
+    <div class="kuva"> <!-- Div-elementti, joka toimii kuvan säiliönä -->
+        <img src="työntekijä2.jpg" alt="kuva työntekijä Terosta"> <!-- Kuva työntekijästä Tero -->
+    </div>
+    <div class="teksti1index"> <!-- Div-elementti, joka sisältää tekstisisällön -->
+        <p>Tervehdys! Täällä Tero, ja olen ylpeä siivousalan ammattilainen Merikarvialla. Työskentelen intohimolla ja sitoumuksella jokaisessa työtehtävässäni, olipa kyse sitten kodin siivoamisesta tai toimistotilojen huollosta. Minut tunnetaan tarkkuudestani ja huolellisuudestani, ja tavoitteeni on aina saavuttaa paras mahdollinen lopputulos. Toivottavasti voin siivota teidänkin kotinne!</p> <!-- Tekstiparagrafi -->
+    </div>
 
-    <H1>Tällä sivustolla löydät tietoa meistä:</H1>
-
-    <h2>Taru</h2>
-    <div class="kuva">
-        <img src="työntekijä1.jpg" alt="kuva työntekijä Tarusta">
-        </div>
-        <div class="teksti1index">
-        <p>Hei! Olen Taru, sitoutunut siivousalan ammattilainen Merikarvialla, ja nautin työstäni täysillä. Olen tunnettu tarkkuudestani ja huolellisuudestani jokaisessa työtehtävässäni, oli kyse sitten kotisiivouksesta tai toimistotilojen kunnossapidosta. Parasta työssäni on nähdä asiakkaiden tyytyväisyys puhtaaseen tilaan sekä työn vaihtelevuus, joka pitää minut motivoituneena päivästä toiseen. Siivousala on minulle enemmän kuin työ – se on intohimo, joka antaa minulle mahdollisuuden tuoda iloa ja hyvinvointia ympärilleni.</p>
-        </div>
-
-    <h2>Tero</h2>
-    <div class="kuva">
-        <img src="työntekijä2.jpg" alt="kuva työntekijä Terosta">
-        </div>
-        <div class="teksti1index">
-    <p>Tervehdys! Täällä Tero, ja olen ylpeä siivousalan ammattilainen Merikarvialla. Työskentelen intohimolla ja sitoumuksella jokaisessa työtehtävässäni, olipa kyse sitten kodin siivoamisesta tai toimistotilojen huollosta. Minut tunnetaan tarkkuudestani ja huolellisuudestani, ja tavoitteeni on aina saavuttaa paras mahdollinen lopputulos. Toivottavasti voin siivota teidänkin kotinne!</p>   
-        </div>
-    <footer class="footer">
-        
-        <p>Copyright &copy; 2024, Siivouspalvelu Merikarvia</p>
-   
-       </footer>
-
-
-
-
+    <footer class="footer"> <!-- Sivun alatunniste -->
+        <p>Copyright &copy; 2024, Siivouspalvelu Merikarvia</p> <!-- Tekijänoikeustiedot -->
+    </footer> <!-- Alatunnisteen lopetus -->
 
 </body>
-</html>
+</html> <!-- HTML-dokumentin lopetus -->

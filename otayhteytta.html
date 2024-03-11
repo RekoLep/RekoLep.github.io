@@ -1,43 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Määrittelee dokumentin tyypin HTML5:ksi -->
+<html lang="en"> <!-- Alkaa HTML-dokumentti, määrittää sivun kielen (englanti) -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="nindex">
-    <meta name="googleboot" content="noindex">
-    <title>Ota meihin yhteyttä!!</title>
-    <link rel="stylesheet" href="tyyli.css">
+    <meta charset="UTF-8"> <!-- Määrittää merkistökoodauksen UTF-8:ksi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Määrittää sivun näkymän ja skaalauksen mobiililaitteille -->
+    <meta name="robots" content="nindex"> <!-- Estää hakukoneita indeksoimasta sivua -->
+    <meta name="googleboot" content="noindex"> <!-- Estää Googlen hakukoneen indeksoimasta sivua -->
+    <title>Ota meihin yhteyttä!!</title> <!-- Asettaa sivun otsikon -->
+    <link rel="stylesheet" href="tyyli.css"> <!-- Linkittää ulkoisen tyylitiedoston -->
 </head>
 <body>
-    <nav class="nav"> 
-        <a href="index.html">
-            <img src="Firmanlogo.png" alt="Etusivu">
+    <nav class="nav"> <!-- Luodaan navigaatiovalikko -->
+        <a href="index.html"> <!-- Linkki etusivulle -->
+            <img src="Firmanlogo.png" alt="Etusivu"> <!-- Firman logo, linkki etusivulle -->
         </a>
-        <a href="index.html" id="index">Etusivu</a>    
-        <a href="tilaasiivous.html" id="tilaasiivous">Tilaa siivous</a>
-        <a href="meista.html" id="meista">Meistä</a>
-        <a href="otayhteytta.html" id="otayhteytta">Ota yhteyttä</a>
+        <a href="index.html" id="index">Etusivu</a> <!-- Linkki etusivulle -->
+        <a href="tilaasiivous.html" id="tilaasiivous">Tilaa siivous</a> <!-- Linkki siivouksen tilaamiseen -->
+        <a href="meista.html" id="meista">Meistä</a> <!-- Linkki 'Meistä' -sivulle -->
+        <a href="otayhteytta.html" id="otayhteytta">Ota yhteyttä</a> <!-- Linkki 'Ota yhteyttä' -sivulle -->
     </nav>
 
-
-
-    <nav class="tilaasiivous">
-
-    <h4>Tällä sivulla voi lähettää vapaasti viestin, kysymyksen tai palautteen palveluihimme liittyen. Vastaamme sinulle mahdollisimman pian.</h4>
-    <label for="Kirjoitakaa viestinne tähän:">Kirjoitakaa viestinne tähän:</label><br>
-    <input type="text" id="Kirjoitakaa viestinne tähän:" name="Kirjoitakaa viestinne tähän:"><br>
-    <input type="submit" value="Lähetä">
-
-    <h3>Tästä löytyy myös meidän yhteytstietomme:</h3>
-    <p>+0405869100</p>
-    <p>siivouspalvelu.merikarvia@gmail.com</p>
+    <nav class="tilaasiivous"> <!-- Luodaan lomake osio, jossa voi ottaa yhteyttä -->
+        <h4>Tällä sivulla voi lähettää vapaasti viestin, kysymyksen tai palautteen palveluihimme liittyen. Vastaamme sinulle mahdollisimman pian.</h4> <!-- Infoteksti lomakkeen yläpuolelle -->
+        <label for="viesti">Kirjoitakaa viestinne tähän:</label><br> <!-- Teksti kentän labeli -->
+        <input type="text" id="viesti" name="viesti"><br> <!-- Tekstikenttä, johon voi kirjoittaa viestin -->
+        <input type="submit" value="Lähetä"> <!-- Lähetä-nappi -->
+        <h3>Tästä löytyy myös meidän yhteystietomme:</h3> <!-- Infoteksti yhteystietojen alapuolelle -->
+        <p>+0405869100</p> <!-- Puhelinnumero -->
+        <p>siivouspalvelu.merikarvia@gmail.com</p> <!-- Sähköpostiosoite -->
     </nav>
-    <footer class="footer">
-        
-        <p>Copyright &copy; 2024, Siivouspalvelu Merikarvia</p>
-   
-       </footer>
 
+    <footer class="footer"> <!-- Sivun alatunniste -->
+        <p>Copyright &copy; 2024, Siivouspalvelu Merikarvia</p> <!-- Tekijänoikeustiedot -->
+    </footer> <!-- Alatunnisteen lopetus -->
 
 </body>
-</html>
+</html> <!-- HTML-dokumentin lopetus -->
