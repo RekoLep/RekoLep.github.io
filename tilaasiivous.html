@@ -1,66 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Määrittää dokumentin tyypin HTML5:ksi -->
+<html lang="en"> <!-- Alkaa HTML-dokumentti, määrittää sivun kielen (englanti) -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="nindex">
-    <meta name="googleboot" content="noindex">
-    <title>Tilaa parasta siivousta!!</title>
-    <link rel="stylesheet" href="tyyli.css">
+    <meta charset="UTF-8"> <!-- Määrittää merkistökoodauksen UTF-8:ksi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Määrittää sivun näkymän ja skaalauksen mobiililaitteille -->
+    <meta name="robots" content="nindex"> <!-- Estää hakukoneita indeksoimasta sivua -->
+    <meta name="googleboot" content="noindex"> <!-- Estää Googlen hakukoneen indeksoimasta sivua -->
+    <title>Tilaa parasta siivousta!!</title> <!-- Asettaa sivun otsikon -->
+    <link rel="stylesheet" href="tyyli.css"> <!-- Linkittää ulkoisen tyylitiedoston -->
 </head>
 <body>
-    <nav class="nav"> 
-        <a href="index.html">
-            <img src="Firmanlogo.png" alt="Etusivu">
+    <nav class="nav"> <!-- Luodaan navigaatiovalikko -->
+        <a href="index.html"> <!-- Linkki etusivulle -->
+            <img src="Firmanlogo.png" alt="Etusivu"> <!-- Firman logo, linkki etusivulle -->
         </a>
-        <a href="index.html" id="index">Etusivu</a>    
-        <a href="tilaasiivous.html" id="tilaasiivous">Tilaa siivous</a>
-        <a href="meista.html" id="meista">Meistä</a>
-        <a href="otayhteytta.html" id="otayhteytta">Ota yhteyttä</a>
+        <a href="index.html" id="index">Etusivu</a> <!-- Linkki etusivulle -->
+        <a href="tilaasiivous.html" id="tilaasiivous">Tilaa siivous</a> <!-- Linkki tilaussivulle -->
+        <a href="meista.html" id="meista">Meistä</a> <!-- Linkki 'Meistä' -sivulle -->
+        <a href="otayhteytta.html" id="otayhteytta">Ota yhteyttä</a> <!-- Linkki 'Ota yhteyttä' -sivulle -->
     </nav>
 
+    <div class="tilaasiivous"> <!-- Div-elementti, joka käsittää tilaussivun sisällön -->
+        <h2>Valitse siivouspalvelu:</h2> <!-- Otsikko valintaruuduille -->
 
+        <form class="tilaasiivous" action="/siivouspalvelu" method="post"> <!-- Lomake, jolla voi tilata siivouspalvelun -->
+            <input type="radio" id="tavallinen" name="siivous" value="tavallinen"> <!-- Valintaruutu tavallista siivousta varten -->
+            <label for="tavallinen">Tavallinen siivous (sisältää koti- ja kiinteistösiivouksen hinta 35€/tunti)</label><br> <!-- Tekstikuvaus tavallisesta siivouspalvelusta -->
 
+            <input type="radio" id="erikoissiivous" name="siivous" value="erikoissiivous"> <!-- Valintaruutu erikoissiivousta varten -->
+            <label for="erikoissiivous">Erikoissiivous (sisältää koti- ja kiinteistösiivouksen lisäksi ulkotilojen ja pihan siivouksen 49€/tunti)</label><br><br> <!-- Tekstikuvaus erikoissiivouspalvelusta -->
 
-<div class="tilaasiivous">
+            <label for="nimi">Nimi:</label><br> <!-- Tekstikentän label: nimi -->
+            <input type="text" id="nimi" name="nimi"><br> <!-- Tekstikenttä: nimi -->
 
-    <h2>Valitse siivouspalvelu:</h2>
+            <label for="puhelinnumero">Puhelinnumero:</label><br> <!-- Tekstikentän label: puhelinnumero -->
+            <input type="text" id="puhelinnumero" name="puhelinnumero"><br> <!-- Tekstikenttä: puhelinnumero -->
 
-<form class="tilaasiivous" action="/siivouspalvelu" method="post">
-  <input type="radio" id="tavallinen" name="siivous" value="tavallinen">
-  <label for="tavallinen">Tavallinen siivous (sisältää koti- ja kiinteistösiivousken hinta 35€/tunti)</label><br>
-  <input type="radio" id="erikoissiivous" name="siivous" value="erikoissiivous">
-  <label for="erikoissiivous">Erikoissiivous (sisältää koti- ja kiinteistösiivousken lisäksi ulkotilojen ja pihan siivouksen 49€/tunti)</label><br><br>
+            <label for="sähköposti">Sähköpostiosoite:</label><br> <!-- Tekstikentän label: sähköposti -->
+            <input type="email" id="sähköposti" name="sähköposti"><br> <!-- Tekstikenttä: sähköposti -->
 
-  <label for="nimi">Nimi:</label><br>
-  <input type="text" id="nimi" name="nimi"><br>
+            <label for="kotiosoite">Kotiosoite:</label><br> <!-- Tekstikentän label: kotiosoite -->
+            <input type="text" id="kotiosoite" name="kotiosoite"><br><br> <!-- Tekstikenttä: kotiosoite -->
 
-  <label for="puhelinnumero">Puhelinnumero:</label><br>
-  <input type="text" id="puhelinnumero" name="puhelinnumero"><br>
+            <label for="milloin">Milloin ja missä siivous tehdään:</label><br> <!-- Tekstikentän label: milloin -->
+            <input type="text" id="milloin" name="milloin"><br><br> <!-- Tekstikenttä: milloin -->
 
-  <label for="sähköposti">Sähköpostiosoite:</label><br>
-  <input type="email" id="sähköposti" name="sähköposti"><br>
+            <input type="submit" value="Lähetä"> <!-- Lähetä-nappi -->
+        </form>
+    </div>
 
-  <label for="kotiosoite">Kotiosoite:</label><br>
-  <input type="text" id="kotiosoite" name="kotiosoite"><br><br>
-
-  <label for="milloin">Milloin ja missä siivous tehdään:</label><br>
-  <input type="text" id="milloin" name="milloin"><br><br>
-
-  <input type="submit" value="Lähetä">
-</form>
-</div>
-
-
-
-<footer class="footer">
-        
-    <p>Copyright &copy; 2024, Siivouspalvelu Merikarvia</p>
-
-</footer>
-
-
+    <footer class="footer"> <!-- Sivun alatunniste -->
+        <p>Copyright &copy; 2024, Siivouspalvelu Merikarvia</p> <!-- Tekijänoikeustiedot -->
+    </footer> <!-- Alatunnisteen lopetus -->
 
 </body>
-
-</html>
+</html> <!-- HTML-dokumentin lopetus -->
